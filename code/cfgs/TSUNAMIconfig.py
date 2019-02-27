@@ -1,15 +1,15 @@
 import os
 
-BASE_PATH = '/home/admin228/Projects/pytorch/cd_newbranch'
+BASE_PATH = '/home/sakurada/work/src/SceneChangeDet/code'
 PRETRAIN_MODEL_PATH = os.path.join(BASE_PATH,'pretrain')
-DATA_PATH = '/media/admin228/0007A0C30005763A/datasets/dataset_/TSUNAMI'
-TRAIN_DATA_PATH = os.path.join(DATA_PATH)
-TRAIN_LABEL_PATH = os.path.join(DATA_PATH)
-TRAIN_TXT_PATH = os.path.join(TRAIN_DATA_PATH,'trainval.txt')
-VAL_DATA_PATH = os.path.join(DATA_PATH)
-VAL_LABEL_PATH = os.path.join(DATA_PATH)
-VAL_TXT_PATH = os.path.join(VAL_DATA_PATH,'test.txt')
-SAVE_PATH = '/media/admin228/00027E210001A5BD/train_pytorch/change_detection/TSUNAMI'
+DATA_PATH = '/projects/g-nedo-geospatial/work/sakurada/work/data/pcd/pcd_2018_0906_r4s4/set0'
+TRAIN_DATA_PATH = os.path.join(DATA_PATH+'/train')
+TRAIN_LABEL_PATH = os.path.join(DATA_PATH+'/train')
+TRAIN_TXT_PATH = os.path.join(DATA_PATH,'train.txt')
+VAL_DATA_PATH = os.path.join(DATA_PATH+'/test')
+VAL_LABEL_PATH = os.path.join(DATA_PATH+'/test')
+VAL_TXT_PATH = os.path.join(DATA_PATH,'test.txt')
+SAVE_PATH = '/projects/g-nedo-geospatial/work/sakurada/work/data/pcd_precut/SceneChangeDet/checkpoint/set0'
 SAVE_CKPT_PATH = os.path.join(SAVE_PATH,'ckpt_final')
 if not os.path.exists(SAVE_CKPT_PATH):
     os.makedirs(SAVE_CKPT_PATH)

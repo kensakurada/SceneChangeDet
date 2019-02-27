@@ -16,9 +16,12 @@
 #
 
 import numpy as np
+import matplotlib as mpl
+mpl.use('Agg')
 import pylab
 import os
 import cv2
+
 
 def getGroundTruth(fileNameGT):
     '''

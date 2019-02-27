@@ -163,7 +163,7 @@ def validate(net, val_dataloader,epoch,save_change_map_dir,save_roc_dir):
         mc.plotPrecisionRecall(pr, recall, roc_save_dir, benchmark_pr=None)
         f_score_total += f_score
 
-    print f_score_total/(len(conds))
+    print(f_score_total/(len(conds)))
     return f_score_total/len(conds)
 
 def main():
